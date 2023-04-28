@@ -4,7 +4,7 @@ import time
 
 app = FastAPI()
 
-@app.post("/add/{tiempo_vuelta}")
+@app.get("/add/{tiempo_vuelta}")
 async def add_number(tiempo_vuelta: float):
     fin_vuelta = time.time()
 
